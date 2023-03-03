@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img class="img-fluid"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW4RvQLsXfpLeQlTTJywWCBs9kn2xHvzzL9g&usqp=CAU"
+          id="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#offerta-settimana">Offerta della settimana</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#welcome-summer">Welcome summer</a>
+          </li>
+          <li class="nav-item d-none d-md-inline">
+            <a class="nav-link" href="#offerta-giorno">Offerta del giorno</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#last-minute">Last minute</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonial">Dicono di noi</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="p-5">
+    <section id="jumbotron" class="jumbotron">
+      <h1 class="display-4">Let's Go</h1>
+      <p class="lead">L'agenzia che realizza i tuoi sogni</p>
+    </section>
+    <div class="accordion" id="accordion">
+      <section id="offerta-settimana" class="py-4">
+        <button class="btn btn-text accordion-button d-flex align-items-center" id="offerta-settimana-button"
+          type="button" data-toggle="collapse" data-target="#offerta-settimana-row" aria-expanded="false"
+          aria-controls="offerta-settimana-row">
+          <h2>Offerte della settimana</h2>
+        </button>
+        <div class="row collapse show" id="offerta-settimana-row" aria-labelledby="offerta-settimana-button">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card my-2 viaggio">
+              <div class="img-container">
+                <img src="https://www.polonia.travel/images/it-IT/co_zobaczyc/szlakiTematyczne/Warszawa_540_360.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Varsavia</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card my-2 viaggio">
+              <div class="img-container">
+                <img src="https://www.turismoroma.it/sites/default/files/Roma%20in%20breve.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Roma</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card my-2 viaggio">
+              <div class="img-container">
+                <img src="https://www.vadoaparigi.com/wp-content/uploads/2023/01/Cosa-vedere-a-Parigi-in-5-giorni.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Parigi</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card my-2 viaggio">
+              <div class="img-container">
+                <img
+                  src="https://www.itaka.pl/blog/wp-content/uploads/2019/12/praga-panorama-miasta-most-karolia-weltawa.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Praga</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="welcome-summer" class="py-4">
+        <button class="btn btn-text accordion-button d-flex align-items-center" id="welcome-summer-button" type="button"
+          data-toggle="collapse" data-target="#welcome-summer-row" aria-expanded="false"
+          aria-controls="welcome-summer-row">
+          <h2>Welcome summer</h2>
+        </button>
+        <div class="row collapse show" id="welcome-summer-row" aria-labelledby="welcome-summer-button">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card my-2 viaggio shadow-lg mb-5 bg-white rounded">
+              <div class="img-container">
+                <img
+                  src="https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/baleares/catedral-santamaria-palma-s434080438.jpg_604889389.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Mallorca</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card my-2 viaggio shadow-lg mb-5 bg-white rounded">
+              <div class="img-container">
+                <img src="https://www.civitatis.com/f/espana/tenerife/guia/santa-cruz-tenerife-m.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tenerife</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card my-2 viaggio shadow-lg mb-5 bg-white rounded">
+              <div class="img-container">
+                <img
+                  src="https://images.lonelyplanetitalia.it/static/places/creta-4724.jpg?q=90&p=2400%7C1350%7Cmax&s=addc04ecedf84e092f5f3d99426e90f1">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Creta</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card my-2 viaggio shadow-lg mb-5 bg-white rounded">
+              <div class="img-container">
+                <img
+                  src="https://www.thomascook.com/.imaging/default/dam/legacy/compressed-jpg/sunny-beach-resort-hero1.jpg/jcr:content.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sunny beach</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card my-2 viaggio shadow-lg mb-5 bg-white rounded">
+              <div class="img-container">
+                <img
+                  src="https://neapol.pl/wp-content/uploads/2018/03/wspaniale-wlochy-mala-oaza-wioski-amalfi-z-turkusowym-morzem_shutterstock_762111313.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Positano</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card my-2 viaggio shadow-lg mb-5 bg-white rounded">
+              <div class="img-container">
+                <img
+                  src="https://sycylia.pl/wp-content/uploads/2021/08/panoramiczny-widok-na-zatoke-mondello-z-monte-pellegrino-pal_shutterstock_1012601518-1536x521.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Palermo</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="offerta-giorno" class="d-none d-md-block py-4">
+        <button class="btn btn-text accordion-button d-flex align-items-center" id="offerta-giorno-button" type="button"
+          data-toggle="collapse" data-target="#offerta-giorno-row" aria-expanded="false"
+          aria-controls="welcome-summer-row">
+          <h2>Offerta del giorno</h2>
+        </button>
+        <div class="row collapse show py-3 viaggio" id="offerta-giorno-row" aria-labelledby="offerta-giorno-button">
+          <div class="col-8">
+            <img class="img-fluid" src="https://www.aeroporto.net/wp-content/uploads/sites/3/cracovia.jpg">
+          </div>
+          <div class="col-4">
+            <h3>Cracovia</h3>
+            <p><strong>Periodo: </strong>05/03/2023-09/03/2023</p>
+            <p><strong>Prezzo: </strong>300€</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, fuga iste reiciendis deleniti officiis
+              quos, omnis quaerat, dolor voluptatibus ea natus velit dicta. Animi, quis fugiat. Odit dolores recusandae
+              sapiente.</p>
+            <p></p>
+          </div>
+        </div>
+      </section>
+      <section id="last-minute" class="py-4">
+        <button class="btn btn-text accordion-button d-flex align-items-center" id="last-minute-button" type="button"
+          data-toggle="collapse" data-target="#last-minute-row" aria-expanded="false" aria-controls="last-minute-row">
+          <h2>Last minute</h2>
+        </button>
+        <div class="row collapse show" id="last-minute-row" aria-labelledby="last-minute-button">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card my-2 viaggio">
+              <div class="img-container">
+                <img
+                  src="https://www.najlepsze-lastminute.pl/tempOpen/images/news-slider-mn-obrazekbox83uz8b4w5at648-1600-950-1.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Maldive</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card my-2 viaggio">
+              <div class="img-container">
+                <img
+                  src="https://www.najlepsze-lastminute.pl/tempOpen/images/news-ba-obrazekbox6d45ll0ok66o14-450-394-1.jpg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cipro</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card my-2 viaggio">
+              <div class="img-container">
+                <img
+                  src="https://media-assets.vanityfair.it/photos/614d8976ffeb9b1764159147/16:9/w_1280%2Cc_limit/Sharm-el-Sheikh-2.jpeg">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sharm-el-Sheikh</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card my-2 viaggio">
+              <div class="img-container">
+                <img
+                  src="https://fatmap-digitiser-assets.imgix.net/86567697-a335-4ddf-adc8-4f302bdb3423?w=2000&fit=crop&auto=compress%2Cformat">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Madonna di Campiglio</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial" class="py-4">
+        <button class="btn btn-text accordion-button d-flex align-items-center" id="testimonial-button" type="button"
+          data-toggle="collapse" data-target="#testimonial-div" aria-expanded="false"
+          aria-controls="welcome-summer-row">
+          <h2>Dicono di noi</h2>
+        </button>
+        <div class="collapse show py-4" id="testimonial-div" aria-labelledby="testimonial-button">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+              <div class="testimonial-img">
+                <img class="rounded-circle" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp">
+              </div>
+              <h3>Tizio Caio</h3>
+              <p>Una esperienza fantastica!</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+              <div class="testimonial-img">
+                <img class="rounded-circle" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp">
+              </div>
+              <h3>Tizio Caio</h3>
+              <p>Una esperienza fantastica!</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+              <div class="testimonial-img">
+                <img class="rounded-circle" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp">
+              </div>
+              <h3>Tizio Caio</h3>
+              <p>Una esperienza fantastica!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="modal fade" id="contattiModal" tabindex="-1" aria-labelledby="contattiModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contattiModalTitle">Contatti</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis aperiam sint esse quod similique
+              molestias provident sapiente repudiandae porro dicta velit, incidunt officia perspiciatis corporis
+              possimus voluptatem! Quo, velit quod.</p>
+            <input type="email" class="form-control" placeholder="Your email">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-white p-4">
+    <div class="row  align-items-center">
+      <div class="col-6 col-md-2">
+        <small>Let's GO srl <br />Via Tal dei tali,22 <br> Benevento </small>
+      </div>
+      <div class="col-6 col-md-2">
+        <a class="btn btn-primary m-2" data-toggle="modal" data-target="#contattiModal">Contattaci</a>
+      </div>
+      <div class="col-6 col-md-2">
+        <button class="btn btn-secondary m-2" id="conta-viaggi">Conta viaggi</button>
+      </div>
+      <div class="col-6 col-md-2">
+        <button class="btn btn-secondary m-2" id="cancella-card">Cancella le card</button>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const contaViaggi = function () {
+      let viaggi = document.getElementsByClassName("viaggio");
+      let counter = 0;
+      for (let viaggio of viaggi) {
+        if (viaggio.checkVisibility()) {
+          counter++
+        }
+      }
+      alert("In questo momento sulla pagina ci sono " + counter + " viaggi");
+    };
+    const cancellaCards = function () {
+      let cards = document.getElementsByClassName("card");
+      for (let i = cards.length - 1; i >= 0; i--) {
+        cards[i].remove();
+      }
+    }
+    document.getElementById("conta-viaggi").addEventListener("click", contaViaggi)
+    document.getElementById("cancella-card").addEventListener("click", cancellaCards)
+    window.onload = function () {
+      const welcomeSummerImgContainers = document.querySelectorAll("#welcome-summer .img-container");
+      for (let container of welcomeSummerImgContainers) {
+        let span = document.createElement("span")
+        span.classList.add("badge", "badge-danger");
+        span.innerText = "HOT"
+        span.style.position = "absolute"
+        span.style.top = "10px"
+        span.style.left = "10px"
+        container.appendChild(span)
+      }
+    }
+  </script>
+</body>
+
+</html>
+
+
+<!-- Abbiamo bisogno di un sito web per un'agenzia di viaggi!
+
+In questa pagina aggiungerai destinazioni di posti che sogni di visitare in futuro.
+
+
+REGOLE
+
+Il progetto dev'essere caricato in una nuova repository su GitHub e linkata al tuo Docente.
+Puoi usare Google / StackOverflow, MA ti suggeriamo caldamente di riferirti principalmente alla documentazione fornita, 
+per non perderti in ricerche infruttuose per troppo tempo.
+
+Prova il tuo lavoro su varie risoluzioni di schermo, ingrandendo e rimpicciolendo la finestra, 
+e soprattutto usando i developer tools del browser che forniscono l'emulatore di svariati device sul quale potrai vedere esattamente come si comporta il tuo layout.
+
+!!! Inizia utilizzando i componenti preformati di Bootstrap4.6 per creare la tua pagina (modificali all'occorrenza utilizzando le utility classes di bootstrap: colori, spazi, margini, dimensioni etc...)
+Usa container > row > col in questo ordine per ottenere un layout responsive perfetto.
+
+EXERCISES:
+
+1) Implementa una navbar. Collega ogni sezione della pagina agli elementi del menu. 
+
+2) Aggiungi un logo alla navbar, una qualsiasi immagine.
+
+3) Aggiungi una sezione Jumbotron con il nome e il payoff dell'agenzia.
+
+4) Implementa la sezione "Offerta della settimana". Qui mostrerai 4 destinazioni.
+
+In questa sezione dovranno esserci:
+
+4 card per destinazioni per linea a schermo grande
+3 card per destinazioni per linea a schermo medio (tablet)
+2 card per destinazioni per linea a schermo piccolo (mobile)
+
+5) Implementa la sezione "Welcome Summer". Qui mostrerai 6 destinazioni al tuo utente.
+
+In questa sezione dovranno esserci:
+
+6 card per destinazioni per linea a schermo grande
+3 card per destinazioni per linea a schermo medio (tablet)
+2 card per destinazioni per linea a schermo piccolo (mobile)
+
+6) Implementa la sezione "Offerta del giorno". Qui avrai:
+
+66% dello spazio dedicato all'immagine del luogo di destinazione
+33% dedicato al nome, date, prezzo e breve descrizione del luogo
+
+7) Rendi invisibile la sezione "Offerta del giorno" su schermi mobile.
+
+8) Aggiungi nella sezione "Welcome Summer" un'ombra grande ad ogni card.
+
+9) Crea una sezione "Last Minute", in cui mostrerai le immagini delle destinazioni last minute sotto forma di card.
+
+10) Crea una sezione "Testimonial", dove l'utente potrà trovare alcuni feedback da utenti fittizi.
+
+11) Crea un footer con le informazioni dell'agenzia e un bottone "Contattaci".
+
+
+
+EXTRAS
+
+12) Crea un bottone vicino ad ogni sezione per collassarla e riaprirla se premuto.
+
+13) Crea la possibilità di contare il numero di "viaggi" presenti sulla pagina.
+
+14) Crea un modale con un messaggio e un campo email.
+
+15) Quando l'utente cliccherà su "Contattaci", fai in modo che il modale venga visualizzato.
+
+16) Crea una funzione che aggiunga un badge con la scritta "HOT" su ognuna delle offerte "Welcome Summer".
+
+17) Crea una funzione che rimuova tutte le "card" dalla pagina
+
+-->
